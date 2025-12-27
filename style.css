@@ -26,6 +26,12 @@ h2 {
 	font-style: italic;
 }
 
+h3 {
+	margin: 0em;
+	padding-top: 1em;
+	padding-bottom: 0em;
+}
+
 a, a:visited {
 	color: #00aaff;
 	text-decoration: none;
@@ -66,4 +72,30 @@ a:hover {
 	font-size: 0.9em;
 	margin-top: 0em;
 	margin-bottom: 0em;
+}
+
+details.shorttalk > summary::before {
+	content: "Title:";
+	padding-right: 0.5em;
+}
+
+details.shorttalk > summary {
+	font-style: italics;
+}
+
+details.shorttalk > p::before {
+	content: "Abstract:";
+	padding-right: 0.9em;
+}
+details.shorttalk > p {
+	font-size: 0.9em;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+details.shorttalk .katex {
+	font-size: 1.0em;
+}
+.footnotes {
+	font-size: 0.9em;
+	line-height: 0.1em;
 }

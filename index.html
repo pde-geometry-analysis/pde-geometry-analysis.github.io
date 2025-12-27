@@ -167,6 +167,24 @@
     }
   </style>
   <link rel="stylesheet" href="/style.css">
+  <script defer=""
+  src="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/katex@latest/dist/katex.min.css" />
 </head>
 <body>
 <header id="title-block-header">
@@ -215,7 +233,324 @@ problems</em></h3>
 </div>
 <h2 id="schedule">Schedule</h2>
 <p><img src="/svg-schedule.svg" /></p>
+<h2 id="short-talks">Short-talks</h2>
+<h3 id="chiara-bernardini">Chiara Bernardini</h3>
+<details class="shorttalk">
+<summary>
+Serrin-type problems on ring-shaped domains: rigidity results
+</summary>
+<p>
+We provide a characterization of rotationally symmetric solutions to the
+Serrin problem on ring-shaped domains in <span
+class="math inline">\mathbb{R}^n</span> (<span class="math inline">n \ge
+3</span>). Our approach is based on a comparison-geometry argument. By
+exploiting a suitable conformal reformulation of the problem, we obtain
+sharp gradient estimates, which play a central role in establishing our
+main rigidity theorem. The comparison method can be effectively extended
+to deal with quasilinear operators. This will be discussed in the second
+part of the talk, where we focus on the case of the <span
+class="math inline">p</span>-Laplacian torsion problem. This talk is
+based on joint works with V. Agostiniani, S. Borghini, L. Mazzieri and
+A. Pinamonti.
+</p>
+</details>
+<h3 id="kahnrad-braxton">Kahnrad Braxton</h3>
+<details class="shorttalk">
+<summary>
+Stability and Morse Index of a Self-Shrinking Möbius Band in Four
+Dimensions
+</summary>
+<p>
+Self-shrinkers are special surfaces that model how shapes collapse under
+mean curvature flow, and their Morse index measures how many independent
+ways they can be perturbed to decrease the associated area-type
+functional. In this talk, I will discuss the stability and Morse index
+of a particular self-shrinking Möbius band sitting in four-dimensional
+Euclidean space. I will describe how passing to the orientable double
+cover of the Möbius band allows us to build a global orthonormal frame
+of normal directions and carry out explicit geometric computations,
+including the metric, the mean curvature vector, and the stability
+operator. A key feature of this example is that the mean curvature never
+vanishes, which simplifies the higher-codimension curvature terms that
+usually make the analysis much harder. Using the natural rotational
+symmetry of the surface and the structure of the double cover, I
+decompose normal variations into Fourier modes and reduce the stability
+problem to a family of one-dimensional ordinary differential equations
+with natural boundary conditions at infinity. I will explain this
+reduction, how it leads to a clean decoupling of the problem into
+separate modes, and what this reveals about the overall stability and
+Morse index of the self-shrinking Möbius band.
+</p>
+</details>
+<h3 id="lorenzo-carletti">Lorenzo Carletti</h3>
+<details class="shorttalk">
+<summary>
+Higher order critical Sobolev inequalities on manifolds, optimal
+constants and dependence on the geometry
+</summary>
+<p>
+We are interested in the optimal constant problem for the critical
+Sobolev embedding of the space <span class="math inline">H^k(M)</span>
+into <span class="math inline">L^{2^\sharp}(M)</span>, where <span
+class="math inline">k</span> is a positive integer, <span
+class="math inline">(M,g)</span> is a closed Riemannian manifold of
+dimension <span class="math inline">n&gt;2k</span>, and <span
+class="math inline">2^\sharp= \frac{2n}{n-2k}</span> is the critical
+Sobolev exponent. In this context, we investigate whether the first
+optimal constant is attained, with the same value as in the Euclidean
+setting. We show that the geometry of the manifold plays a crucial role
+in the validity of the optimal inequality, depending on the nature of
+the lower-order remainder term that is chosen. The proof strategy works
+independently of the order of the problem and relies on the study of the
+precise pointwise behavior of an asymptotically singular sequence of
+positive solutions to a critical polyharmonic equation with diverging
+coefficients. This is joint work with Fr'ed'eric Robert (IECL Nancy).
+</p>
+</details>
+<h3 id="giacomo-cozzi">Giacomo Cozzi</h3>
+<details class="shorttalk">
+<summary>
+Stability of the Ball in Isoperimetric Inequalities Between Two
+Fractional Perimeters
+</summary>
+<p>
+We prove that the ball is a local minimizer of the scale invariant
+isoperimetric ratio between two fractional perimeters under <span
+class="math inline">C^1</span> small graph perturbations. To establish
+this, we show that the second variation of this functional is coercive
+with respect to a suitable Sobolev norm for functions defined over the
+unitary sphere in <span class="math inline">\mathbb{R}^n</span>. This
+parallels the results known in the literature where one of the two
+fractional perimeters is replaced by the volume. This is a joint work
+with G. Alberti, J. Mirmina (Università di Pisa) and A. Massaccesi
+(Università degli Studi di Padova).
+</p>
+</details>
+<h3 id="joshua-daniels-holgate">Joshua Daniels-Holgate</h3>
+<details class="shorttalk">
+<summary>
+Non-uniqueness in Mean Curvature Flow
+</summary>
+<p>
+When mean curvature flow evolves non-uniquely, the flow is said to
+fatten. The work of Ilmanen shows that any weak MCF is supported inside
+the fattening, and work of Hershkovits–White identified canonical weak
+flows supported on the boundary of the fattening, known as the outermost
+flows. It is natural to ask, when the flow fattens, are there weak mean
+curvature flows supported strictly inside the fattening? Outside of some
+special cases (e.g. flow from cones), this question was entirely open.
+We show these interior flows exist, providing a general construction for
+non-outermost flows as limits of solutions to the parabolic <span
+class="math inline">\varepsilon</span>-Allen—Cahn flow.
+</p>
+</details>
+<h3 id="antoine-detaille">Antoine Detaille</h3>
+<details class="shorttalk">
+<summary>
+A surprising threshold for the method of singular projection
+</summary>
+<p>
+The method of singular projection, introduced by Hardt and Lin (1987)
+with roots in the work of Federer and Fleming (1960), is a very useful
+tool in geometric analysis, that essentially allows to apply linear
+techniques to some problems to which they would normally not because of
+a nonlinear constraint. Its range of applications comprises the
+approximation problem of mappings into manifolds to the study of
+minimizing harmonic maps. In this talk, I will introduce and explain
+this method, illustrate its importance by reviewing some of its
+applications, and conclude with a recent result featuring a surprising
+threshold in the values of the parameters for which this method applies
+in the context of fractional Sobolev spaces with less than one
+derivative, answering a folklore question raised notably by the harmonic
+maps community.
+</p>
+</details>
+<h3 id="natasha-diederen">Natasha Diederen</h3>
+<details class="shorttalk">
+<summary>
+Increase in topological complexity along the mean curvature flow
+</summary>
+<p>
+A hypersurface evolves by mean curvature flow if it moves with velocity
+equal to its mean curvature vector at each point. The process is
+described by a non-linear parabolic PDE, and solutions form
+singularities in finite time. A central question in the is the
+classification of these singularities, and the behaviour of the flow as
+it moves through them. For surfaces in three-dimensional space, the
+picture is well understood: all singularities are modelled by
+self-shrinkers of multiplicity one and the genus is non-increasing with
+time. However, in higher dimensions, the topology can become more
+complex after the first singular time. In this talk we present an
+explicit example of such behaviour.
+</p>
+</details>
+<h3 id="maria-fernanda-espinal-florez">Maria Fernanda Espinal
+Florez</h3>
+<details class="shorttalk">
+<summary>
+On the existence and classification of <span
+class="math inline">k</span>-Yamabe gradient solitons
+</summary>
+<p>
+The <span class="math inline">k</span>-Yamabe flow is a fully nonlinear
+extension of the Yamabe flow that appears naturally in problems related
+to topological classification in higher dimensions. In this talk we
+describe the construction, classification and asymptotic behavior of
+radially symmetric gradient <span class="math inline">k</span>-Yamabe
+solitons that are locally conformally flat,<a href="#fn1"
+class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>
+these are special solutions to the flow that play a central role in the
+theory. Our study extends results by Daskalopoulos and Šešum<a
+href="#fn2" class="footnote-ref" id="fnref2"
+role="doc-noteref"><sup>2</sup></a> in the case <span
+class="math inline">n&gt;2k</span>. This is joint work with Mariel Sáez.
+</p>
+</details>
+<h3 id="marcus-flook">Marcus Flook</h3>
+<details class="shorttalk">
+<summary>
+Mean curvature flow analogues in Cauchy-Riemann (CR) Geometry
+</summary>
+<p>
+In this talk, I will introduce and motivate domains of holomorphy and
+Cauchy-Riemann (CR) geometry by considering real hypersurfaces embedded
+in complex Euclidean space. I will introduce flows of CR hypersurfaces
+that are analogous to the mean curvature flow and discuss joint research
+with Ben Andrews on new flows which preserve key components of the CR
+structure. This talk will be accessible to those with a background in
+Riemannian geometry.
+<p>
+</details>
+<h3 id="mattia-freguglia">Mattia Freguglia</h3>
+<details class="shorttalk">
+<summary>
+Yamabe metrics on conical manifolds I: existence results via local
+geometry
+</summary>
+<p>
+We consider the Yamabe equation on conical manifolds with Ricci-flat
+tangent cones. In contrast to the case of smooth closed manifolds,
+solutions may fail to exist in the singular setting. However, in
+dimension <span class="math inline">n \ge 4</span>, and under a generic
+condition on the metric near the conical points, we show the existence
+of a minimizing solution. Based on a joint work with Andrea Malchiodi
+(SNS).
+</p>
+</details>
+<h3 id="francesco-malizia">Francesco Malizia</h3>
+<details class="shorttalk">
+<summary>
+Yamabe metrics on conical manifolds II: existence results via min–max
+methods
+</summary>
+<p>
+While the Yamabe problem is completely solved on smooth closed
+manifolds, its extension to singular spaces presents significant new
+challenges. In particular, minimizers of the Yamabe functional may fail
+to exist. In this talk, we prove the existence of Yamabe metrics on
+four-manifolds with finitely many conical points with <span
+class="math inline">Z/2Z</span>-group, using for the first time a
+min–max scheme in the singular setting. In our proof, we exploit recent
+positive mass theorems in the conical setting and study how the mass of
+the conformal blow-up diverges as the blow-up point approaches the
+singular set. This is based on joint work with Mattia Freguglia
+(Bocconi) and Andrea Malchiodi (SNS).
+</p>
+</details>
+<h3 id="dorian-martino">Dorian Martino</h3>
+<details class="shorttalk">
+<summary>
+Weak immersions with a second fundamental form in a critical Sobolev
+space
+</summary>
+<p>
+Generalized Willmore energies have been studied in the past decade due
+to their relationship with renormalized volume of minimal submanifolds
+and their applications in AdS/CFT correspondence. In this talk, I will
+present an analytical framework developed in collaboration with Tristan
+Rivière in order to study variational problems for such Lagrangians.
+</p>
+</details>
+<h3 id="ivan-miranda-de-almeida">Ivan Miranda de Almeida</h3>
+<details class="shorttalk">
+<summary>
+On the stability of CMC hypersurfaces
+</summary>
+<p>
+A weakly stable immersed CMC hypersurface minimizes area up to second
+order among variations that preserve the enclosed volume. We present
+results on the classification of complete examples in six-dimensional
+space forms.
+</p>
+</details>
+<h3 id="isaac-newell">Isaac Newell</h3>
+<details class="shorttalk">
+<summary>
+Cartan’s and Gauss’ equations and rigidity theorems for isometric
+embeddings in low Sobolev regularity
+</summary>
+<p>
+Let <span class="math inline">\left\{\eta^i\right\}_{i=1}^2</span> be an
+orthonormal coframe on a subdomain <span class="math inline">U</span> of
+a smooth surface <span class="math inline">(\Sigma,g)</span>. When <span
+class="math inline">\eta^i</span> is smooth, there is a unique
+connection <span class="math inline">1</span>-form <span
+class="math inline">\omega</span> satisfying Cartan’s structural
+equations <span class="math inline">d \eta^1 = \eta^2 \wedge
+\omega</span> and <span class="math inline">d \eta^2 = -d \eta^1 \wedge
+\omega</span>, and moreover the second structural equation <span
+class="math inline">d\omega=K_g dvol_g</span> holds. We show that these
+equations remain valid in the sense of distributions when the frame has
+only <span class="math inline">C^0 \cap H^{1/2}</span> regularity. From
+this, analogous results for the Gauss equation <span
+class="math inline">\det D^2=K_g (1+|Df|^2)^2</span> for the graphical
+representation of an isometric embeddings <span class="math inline">u
+\colon \Sigma \to\mathbb{R}^3</span> can be deduced. The later equation
+remains true if <span class="math inline">u \in C^1 \cap
+W^{1+\frac{2}{3},3}</span> or <span class="math inline">BV^2 \cap
+c^{1,\frac{1}{2}}</span> with the distributional Hessian <span
+class="math inline">\operatorname{Det} D^2f</span> replacing <span
+class="math inline">\det D^2 f</span>. As an application, we prove
+regularity and convexity results in the case of positive Gaussian
+curvature, extending earlier work by Conti–De Lellis–Székelyhidi (Abel
+Symposium, 2010), Giron (DPhil thesis, 2021) and Pakzad (J. Funct.
+Anal., 2024). This is joint work with Luc Nguyen.
+</p>
+</details>
+<h3 id="andrew-roberts">Andrew Roberts</h3>
+<details class="shorttalk">
+<summary>
+A conservation law for <span
+class="math inline">\varepsilon</span>-harmonic maps
+</summary>
+<p>
+In order to account for the problems in regularity theory and existence
+in harmonic map theory various approximations to Dirichlet energy have
+been devised. One of these is the <span
+class="math inline">\varepsilon</span>-energy introduced by Lamm which I
+will discuss a conservation law for. This is joint work with Carolin
+Bayer (ETH Zurich).
+</p>
+</details>
+<h3 id="sebastian-woodward">Sebastian Woodward</h3>
+<details class="shorttalk">
+<summary>
+Quantitative stability estimates near infinitely concentrated minimisers
+</summary>
+<p>
+I will discuss joint work with Professor Melanie Rupflin, which
+establishes quantitative stability estimates for degree one maps of the
+Dirichlet Energy from either the torus or hyperbolic surfaces into the
+sphere. While the classical question of quantitative stability fails due
+to the non-existence of degree one minimisers from the given surface,
+the existence of a singular minimiser consisting of a “bubble” and “base
+map” can be shown. In this work, we establish a quantitative stability
+estimate for this set of singular minimisers through a carefully
+constructed combined gradient flow that evolves both domain and map.
+</p>
+</details>
 <h2 id="travelling-to-edinburgh">Travelling to Edinburgh</h2>
+</details>
 <p>Please see <a
 href="https://icms.ac.uk/coming-to-icms-edinburgh/">this link</a> for
 details on travelling to the ICMS.</p>
@@ -240,5 +575,16 @@ href="mailto:pde-geometry-analysis@leeds.ac.uk">pde-geometry-analysis@leeds.ac.u
 <h2 id="sponsors">Sponsors</h2>
 <p>This conference is supported by EPSRC research grant EP/W026597/1,
 and we gratefully acknowledge the support of the ICMS.</p>
+<section id="footnotes" class="footnotes footnotes-end-of-document"
+role="doc-endnotes">
+<hr />
+<ol>
+<li id="fn1"><p>M. F. Espinal, M. Sáez, , J. Geom. Anal. 35 (2025).<a
+href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2"><p>P. Daskalopoulos, N. Šešum , Adv. Math. 240 (2013),
+346–369.<a href="#fnref2" class="footnote-back"
+role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section>
 </body>
 </html>
